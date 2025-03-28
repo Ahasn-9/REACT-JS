@@ -4,9 +4,18 @@ import "./App.css";
 function App() {
   let [counter, setCounter] = useState(0);
   const addValue = () => {
+    if (counter >= 10) {
+      alert("Counter value is already 10");
+      return;
+    }
     setCounter(counter + 1);
   };
   const subValue = () => {
+    if (counter <= 0) {
+      alert("Counter value will not be less than 0");
+      return;
+    }
+
     setCounter(counter - 1);
   };
   return (
