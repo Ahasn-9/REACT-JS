@@ -4,13 +4,9 @@ import viteLogo from "/vite.svg";
 import "./App.css";
 
 function App() {
-  const [count, setCount] = useState(0);
+  const [color, setColor] = useState("olive");
 
-  return (
-    <>
-      <h1 className="bg-green-400 text-black rounded-xl p-1">Tailwind</h1>
-    </>
-  );
+  return <></>;
 }
 
 export default App;
